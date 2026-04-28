@@ -26,6 +26,3 @@ Xray CE uses **SpongePowered Mixins** to hook directly into the Minecraft render
 
 ## Author
 - **chronicboy31**
-
----
-*Disclaimer: Use of Xray may be against the rules on some servers. Use responsibly.*
