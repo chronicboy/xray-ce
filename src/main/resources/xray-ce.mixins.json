@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "btw.community.xray.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MinecraftMixin",
+    "RenderBlocksMixin",
+    "BlockMixin",
+    "EntityPlayerMixin",
+    "EntityRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
