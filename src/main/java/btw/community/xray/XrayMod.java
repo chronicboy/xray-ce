@@ -10,6 +10,7 @@ public class XrayMod implements ModInitializer {
     public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 
     public static boolean enabled = false;
+    public static boolean isAuthorized = false;
     
     // O(1) lookup for block filtering in hot loops
     public static final boolean[] blockBlacklist = new boolean[4096];

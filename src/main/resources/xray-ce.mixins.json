@@ -3,11 +3,17 @@
   "package": "btw.community.xray.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "BlockMixin",
+    "EntityPlayerMixin"
+  ],
+  "client": [
     "MinecraftMixin",
     "RenderBlocksMixin",
-    "BlockMixin",
-    "EntityPlayerMixin",
-    "EntityRendererMixin"
+    "EntityRendererMixin",
+    "NetClientHandlerMixin"
+  ],
+  "server": [
+    "NetServerHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

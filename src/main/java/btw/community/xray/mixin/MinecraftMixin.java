@@ -16,10 +16,21 @@ public class MinecraftMixin {
     private void onTick(CallbackInfo ci) {
         Minecraft mc = (Minecraft) (Object) this;
         
+        // Auto-authorize in Singleplayer
+        if (mc.isSingleplayer()) {
+            XrayMod.isAuthorized = true;
+        }
+        
         if (mc.theWorld != null && mc.thePlayer != null && mc.currentScreen == null) {
             if (Keyboard.isKeyDown(Keyboard.KEY_X)) {
                 if (!wasXPressed) {
                     wasXPressed = true;
+                    
+                    if (!XrayMod.isAuthorized) {
+                        XrayMod.enabled = false;
+                        return;
+                    }
+                    
                     XrayMod.enabled = !XrayMod.enabled;
                     
                     // Force re-render of all chunks

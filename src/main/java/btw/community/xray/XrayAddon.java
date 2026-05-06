@@ -7,8 +7,8 @@ public class XrayAddon extends BTWAddon {
     private static XrayAddon instance;
 
     public XrayAddon() {
-        // Enforce that this mod must be present on both client and server
-        this.isRequiredClientAndServer = true;
+        // This mod is client-only and does not need to be on the server
+        this.isRequiredClientAndServer = false;
     }
 
     @Override

@@ -9,12 +9,13 @@ A high-performance, optimized Xray utility specifically designed for **Better Th
 - **☀️ Built-in Fullbright**: Forget torches. Light levels are maximized while Xray is active.
 - **🌑 Gloom Immunity**: Bypasses the BTW "Gloom" mechanic, preventing insanity effects and visual darkness.
 - **⌨️ Easy Toggle**: Press `X` to instantly toggle your vision.
+- **🛡️ Server Authorized**: Respects server rules. Automatically unlocks in Singleplayer, but requires server permission to function on multiplayer servers.
 
 ## Installation
 
 1. Ensure you have **Better Than Wolves CE 3.0.0+** installed.
 2. Drop the `xray-ce-1.0.0.jar` into your `mods` folder.
-3. This mod is **Server-Enforced**. It must be installed on the server to function.
+3. **Multiplayer**: If you want to use this on a server you own, install the same jar on the server to authorize your players.
 
 ## Technical Details
 
